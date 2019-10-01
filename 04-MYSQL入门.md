@@ -282,7 +282,16 @@
     SELECT uname,money FROM users ORDER BY money DESC;
     ```
 
-    
+
+
+
+####添加外键
+
+~~~sql
+alter table orders add foreign key (cid) references customer(cid);
+~~~
+
+
 
 # 5.聚合函数
 
@@ -349,3 +358,72 @@
 
   
 
+# 7.多表设计
+
+- 表与表之间的关系一般有三种
+
+  - 一对一
+  - 一对多
+  - 多对多
+
+- 多表设计原则
+
+  - 一对多:  在**多的一方**创建一个字段, 这个字段作为外键指向**一的一方**的主键
+
+  - 多对多: 创建一个中间表, 中间表中至少有两个字段, 分别作为外键指向双方的主键
+
+  - 一对一
+
+    - 使用一对多的方式, 在一方建立唯一外键
+
+    - 主键对应: 将双方的主键建立映射关系(双方的主键使用相同的ID)
+
+      
+
+# 8.多表查询
+
+#####交叉查询:
+
+- 语法: select * from A,B;
+- 查询到的是两个表的**笛卡尔积**
+- 一般很少用
+
+#####**内连接查询** 
+
+- inner join [inner关键字可以省略]
+
+- 查询的是**两个表的交集内容**
+- 语法: 
+  - 显式内连接: select * from A inner join B on 条件;
+  - 隐式内连接: select * from A,B where 条件;
+- 例子:
+  - 显式: SELECT * FROM customer c INNER JOIN orders o ON c.cid=o.cid;
+  - 隐式: SELECT * FROM customer c , orders o where c.cid=o.cid;
+
+##### **外连接查询**: 
+
+- outer join[关键字outer可以省略]
+
+- 左外连接: 查询的是**左表的全部和两个表的交集**
+  - 语法: select * from A left outer join B on 条件;
+  - 例子: SELECT * FROM customer c LEFT OUTER JOIN orders o ON c.cid=o.cid;
+- 右外连接: 查询的是**右表的全部和两个表的交集**
+  - 语法: select * from A rigth outer join B on 条件;
+  - 例子: SELECT * FROM customer c RIGHT OUTER JOIN  orders o ON c.cid=o.cid;
+
+
+
+![](.\imgs\MYSQL-外连接查询图示.jpg)
+
+#####**图示说明:**
+
+	- 内连接查询到的是交集C
+	- 左外连接查询到的是A+C
+	- 右外连接查询到的是B+C
+
+
+
+##### 子查询
+
+- 一个SQL语句查询的过程依赖另一个查询语句
+- 例子: select * from customer c, orders o where c.cid=o.cid and c.cid in **(select cid from orders where addr like "广东%");**

@@ -128,3 +128,11 @@ Document doc = reader.read("xml路径");
   ```
 
   
+
+## DOM4J支持XPath
+
+- 需要多导入另一个jar包:  `jaxen-1.1.2.jar`
+
+- dom4j中支持XPath的API:
+  - List document.selectNodes(String xPath);
+  - Node document.selectSingleNode(String xPath);

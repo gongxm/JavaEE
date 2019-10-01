@@ -1,15 +1,16 @@
-#DBCP
- ####1. 导入jar包
+# DBCP
+
+ #### 1. 导入jar包
    - commons-dbcp-1.4.jar
    - commons-pool-1.5.6.jar
 
-####2. 创建数据源对象
+#### 2. 创建数据源对象
 
    ```java
    BasicDataSource dataSource = new BasicDataSource();
    ```
 
-####3. 设置参数
+#### 3. 设置参数
 
    - 常用配置项:
 
@@ -121,7 +122,7 @@ ComboPooledDataSource cpds = new ComboPooledDataSource("mainDataBase");// 使用
 
 
 
-#c3p0与dbcp区别
+# c3p0与dbcp区别
 
 - dbcp没有自动回收空闲连接的功能
 

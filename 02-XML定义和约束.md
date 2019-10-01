@@ -169,7 +169,8 @@
     <!DOCTYPE 根元素名称 PUBLIC "DTD名称" "DTD文档的URL">
     
     例如:
-    <!DOCTYPE web-app PUBLIC "-//Sun Microsystem,Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+    <!DOCTYPE web-app PUBLIC "-//Sun Microsystem,Inc.//DTD Web Application 2.3//EN" 
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
     ```
 
   - DTD语法:
@@ -208,13 +209,13 @@
 
   - CDATA
 
-  - 枚举:表示只能从枚举列表中任选其一, 例如:
+  - 枚举: 表示只能从枚举列表中任选其一, 例如:
 
     ```xml-dtd
 		<!ATTLIST 肉 品种(鸡肉|牛肉|猪肉|鱼肉) "鸡肉">
     ```
 
-  -  ID:表示属性的取值不能重复
+  -  ID: 表示属性的取值不能重复
 
 - 设置说明
 

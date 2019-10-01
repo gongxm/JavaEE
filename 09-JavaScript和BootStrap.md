@@ -437,7 +437,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 使用单一的一组 `.col-md-*` 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有列（column）必须放在`.row` 内。
 
-![](.\imgs\bootstrap-栅格系统实例.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例.jpg)
 
 ```html
 <div class="row">
@@ -487,7 +487,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 是否不希望在小屏幕设备上所有列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 `.col-xs-*` 和 `.col-md-*`。请看下面的实例，研究一下这些是如何工作的。
 
-![](.\imgs\bootstrap-栅格系统实例2.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例2.jpg)
 
 ```html
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -516,7 +516,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 在上面案例的基础上，通过使用针对平板设备的 `.col-sm-*` 类，我们来创建更加动态和强大的布局吧
 
-![](.\imgs\bootstrap-栅格系统实例3.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例3.jpg)
 
 ```html
 <div class="row">
@@ -538,7 +538,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 如果在一个 `.row` 内包含的列（column）大于12个，包含多余列（column）的元素将作为一个整体单元被另起一行排列。
 
-![](.\imgs\bootstrap-栅格系统实例4.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例4.jpg)
 
 ```html
 <div class="row">
@@ -554,7 +554,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 即便有上面给出的四组栅格class，你也不免会碰到一些问题，例如，在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 `.clearfix`
 
-![](.\imgs\bootstrap-栅格系统实例5.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例5.jpg)
 
 ```html
 <div class="row">
@@ -589,7 +589,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，�
 
 使用 `.col-md-offset-*` 类可以将列向右侧偏移。这些类实际是通过使用 `*` 选择器为当前元素增加了左侧的边距（margin）。例如，`.col-md-offset-4` 类将 `.col-md-4` 元素向右侧偏移了4个列（column）的宽度。
 
-![](.\imgs\bootstrap-栅格系统实例6.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例6.jpg)
 
 ```html
 <div class="row">
@@ -624,7 +624,7 @@ You can also override offsets from lower grid tiers with `.col-*-offset-0` class
 
 为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 `.row` 元素和一系列 `.col-sm-*` 元素到已经存在的 `.col-sm-*` 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。
 
-![](.\imgs\bootstrap-栅格系统实例7.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例7.jpg)
 
 ```html
 <div class="row">
@@ -648,7 +648,7 @@ You can also override offsets from lower grid tiers with `.col-*-offset-0` class
 
 通过使用 `.col-md-push-*` 和 `.col-md-pull-*` 类就可以很容易的改变列（column）的顺序。
 
-![](.\imgs\bootstrap-栅格系统实例8.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/bootstrap-栅格系统实例8.jpg)
 
 ```html
 <div class="row">

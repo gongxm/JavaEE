@@ -413,7 +413,7 @@ alter table orders add foreign key (cid) references customer(cid);
 
 
 
-![](.\imgs\MYSQL-外连接查询图示.jpg)
+![](https://raw.githubusercontent.com/gongxm/JavaEE/master/imgs/MYSQL-外连接查询图示.jpg)
 
 ##### **图示说明:**
 

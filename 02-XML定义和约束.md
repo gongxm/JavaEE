@@ -211,7 +211,7 @@
   - 枚举:表示只能从枚举列表中任选其一, 例如:
 
     ```xml-dtd
-<!ATTLIST 肉 品种(鸡肉|牛肉|猪肉|鱼肉) "鸡肉">
+		<!ATTLIST 肉 品种(鸡肉|牛肉|猪肉|鱼肉) "鸡肉">
     ```
 
   -  ID:表示属性的取值不能重复
@@ -225,7 +225,7 @@
 
   - 直接值:表示属性的取值为该默认值
 
-    ```dtd
+    ```xml-dtd
     <!ATTLIST book
     	name CDATA #REQUIRED 
     	author CDATA #IMPLIED

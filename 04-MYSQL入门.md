@@ -136,7 +136,7 @@
 
 # 4.数据表增删改查操作
 
-####添加数据
+#### 添加数据
 
 - 添加数据
 
@@ -285,7 +285,7 @@
 
 
 
-####添加外键
+#### 添加外键
 
 ~~~sql
 alter table orders add foreign key (cid) references customer(cid);
@@ -337,7 +337,7 @@ alter table orders add foreign key (cid) references customer(cid);
 
 # 6.分组查询
 
-**格式:  **
+ **格式:** 
 
 ```sql
  SELECT 字段1,字段2...FROM 表名 GROUP BY 字段 HAVING 条件;
@@ -382,13 +382,13 @@ alter table orders add foreign key (cid) references customer(cid);
 
 # 8.多表查询
 
-#####交叉查询:
+##### 交叉查询:
 
 - 语法: select * from A,B;
 - 查询到的是两个表的**笛卡尔积**
 - 一般很少用
 
-#####**内连接查询** 
+##### **内连接查询** 
 
 - inner join [inner关键字可以省略]
 
@@ -415,7 +415,7 @@ alter table orders add foreign key (cid) references customer(cid);
 
 ![](.\imgs\MYSQL-外连接查询图示.jpg)
 
-#####**图示说明:**
+##### **图示说明:**
 
 	- 内连接查询到的是交集C
 	- 左外连接查询到的是A+C

@@ -1,4 +1,4 @@
-#JavaScript
+# JavaScript
 
 #### 1.JavaScript的组成
 
@@ -57,7 +57,7 @@
 - location
   - href: 跳转到指定链接
 
-####6.JavaScript中的DOM对象中常用的方法
+#### 6.JavaScript中的DOM对象中常用的方法
 
 - 获取元素
   - document.getElementById() 				: 通过ID获取到元素
@@ -138,7 +138,7 @@
 
 
 
-####2.基本语法
+#### 2.基本语法
 
 ```javascript
 /*以下内容相当于JavaScript中的window.onload()*/
@@ -274,7 +274,7 @@ $(d1).html("xxx");
 
 
 
-####5.jQuery 属性操作方法
+#### 5.jQuery 属性操作方法
 
 | 方法                 | 描述                     |
 | :------------------ | :----------------------- |
@@ -657,9 +657,9 @@ You can also override offsets from lower grid tiers with `.col-*-offset-0` class
 </div>
 ```
 
-####CSS
+#### CSS
 
-####组件
+#### 组件
 
 #### JavaScript插件
 
